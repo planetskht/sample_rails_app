@@ -39,6 +39,7 @@ group :development do
   gem "capistrano-rails"
   gem "capistrano-rvm"
   gem "capistrano-bundler"
+  gem 'capistrano-webpacker-precompile', require: false
 end
 
 group :test do
