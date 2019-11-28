@@ -26,7 +26,8 @@ group :development, :test do
   gem "rspec-rails"
   gem "simplecov"
   gem "rubocop", require: false
-  gem 'sqlite3', '1.4.1'
+  #gem 'sqlite3', '1.4.1'
+  gem 'sqlite3', '~> 1.3.6'
   gem 'byebug', '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
