@@ -27,12 +27,13 @@ group :development, :test, :staging do
   gem "simplecov"
   gem "rubocop", require: false
   gem 'sqlite3', '1.4.1'
+  gem 'listen',                '3.1.5'
   gem 'byebug', '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
   gem 'web-console',           '4.0.1'
-  gem 'listen',                '3.1.5'
+  #gem 'listen',                '3.1.5'
   gem 'spring',                '2.1.0'
   gem 'spring-watcher-listen', '2.0.1'
   gem "capistrano"
