@@ -9,11 +9,13 @@ set :branch, 'capistrano-test'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/jetbrains/apps"
+set :deploy_to, "/home/jetbrains/apps/sample_rails_app"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 set :format, :pretty
+
+#after 'deploy:updated', 'webpacker:precompile'
 
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.
