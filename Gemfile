@@ -20,18 +20,17 @@ gem 'bootsnap',                   '1.4.4', require: false
 gem "factory_bot"
 gem "factory_bot_rails"
 
-group :development, :test do
+group :development, :test, :staging do
   #gem 'debase'
   #gem 'ruby-debug-ide'
   gem "rspec-rails"
   gem "simplecov"
   gem "rubocop", require: false
-  #gem 'sqlite3', '1.4.1'
-  gem 'sqlite3', '~> 1.3.6'
+  gem 'sqlite3', '1.4.1'
   gem 'byebug', '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-group :development do
+group :development, :staging do
   gem 'web-console',           '4.0.1'
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.1.0'
